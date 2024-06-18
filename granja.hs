@@ -67,4 +67,15 @@ type proceso = [actividad]
 proceso animal  = foldl ($) animal proceso
 
 
+mejoraONoMejora [] _ = animal
+mejoraONoMejora proceso animal = (<3) && (> peso animal) head proceso $ mejoraONoMejora proceso animal
+
+
+
+type animales = [animal]
+
+giveMeThree animales = take 3 . filter (nombreFalopa animal) animales
+
+
+//seria posible por el lazy evaluation y la funcion "take" que solo toma los 3 primeros de cualquier lista que le deseemos pasar sin importarle la cantidad de elementos que esta misma posea
 
