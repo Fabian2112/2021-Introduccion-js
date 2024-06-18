@@ -77,5 +77,5 @@ type animales = [animal]
 giveMeThree animales = take 3 . filter (nombreFalopa animal) animales
 
 
-//seria posible por el lazy evaluation y la funcion "take" que solo toma los 3 primeros de cualquier lista que le deseemos pasar sin importarle la cantidad de elementos que esta misma posea
+--seria posible por el lazy evaluation y la funcion "take" que solo toma los 3 primeros de cualquier lista que le deseemos pasar sin importarle la cantidad de elementos que esta misma posea
 
